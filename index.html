@@ -7,7 +7,12 @@
   <meta name="description" content="Peluquería Estilo: cortes de cabello, barba, peinados y tinte para toda la familia. Reserva tu turno por WhatsApp.">
   <meta name="theme-color" content="#0C2A2E">
 
-  <!-- Icono de la pestaña (evita el error 404 del favicon) -->
+  <!-- Texto que aparece al compartir el link por WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Peluquería Estilo">
+  <meta property="og:description" content="Cortes de cabello, barba y color para toda la familia. Reserva tu turno por WhatsApp.">
+
+  <!-- Icono de la pestaña -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✂️</text></svg>">
 
   <!-- Tipografías de Google Fonts -->
@@ -25,6 +30,7 @@
       <nav class="menu" aria-label="Principal">
         <a href="#servicios">Servicios</a>
         <a href="#trabajos">Trabajos</a>
+        <a href="#nosotros">Nosotros</a>
         <a href="#visita">Horario</a>
         <a class="boton boton-chico" href="https://wa.me/593999999999?text=Hola%2C%20quiero%20reservar%20un%20turno" target="_blank" rel="noopener">Reservar</a>
       </nav>
@@ -63,16 +69,49 @@
     <section class="seccion fondo-suave" id="trabajos">
       <div class="contenedor">
         <h2>Nuestros trabajos</h2>
-        <p class="nota">Algunos cortes y peinados recientes.</p>
+        <p class="nota">Algunos cortes y peinados recientes. Toca una foto para verla en grande.</p>
 
-        <!-- Las fotos están en la carpeta "img" y se llaman foto1.jpg hasta foto6.jpg -->
         <div class="galeria">
-          <figure class="foto foto-grande"><img src="img/foto1.jpg" alt="Trabajo de Peluquería Estilo, foto 1"></figure>
-          <figure class="foto"><img src="img/foto2.jpg" alt="Trabajo de Peluquería Estilo, foto 2" loading="lazy"></figure>
-          <figure class="foto"><img src="img/foto3.jpg" alt="Trabajo de Peluquería Estilo, foto 3" loading="lazy"></figure>
-          <figure class="foto"><img src="img/foto4.jpg" alt="Trabajo de Peluquería Estilo, foto 4" loading="lazy"></figure>
-          <figure class="foto"><img src="img/foto5.jpg" alt="Trabajo de Peluquería Estilo, foto 5" loading="lazy"></figure>
-          <figure class="foto"><img src="img/foto6.jpg" alt="Trabajo de Peluquería Estilo, foto 6" loading="lazy"></figure>
+          <figure class="foto"><button type="button" class="foto-boton" aria-label="Ver foto 1 en grande"><img src="img/foto1.jpg" alt="Trabajo de Peluquería Estilo, foto 1"></button></figure>
+          <figure class="foto"><button type="button" class="foto-boton" aria-label="Ver foto 2 en grande"><img src="img/foto2.jpg" alt="Trabajo de Peluquería Estilo, foto 2" loading="lazy"></button></figure>
+          <figure class="foto"><button type="button" class="foto-boton" aria-label="Ver foto 3 en grande"><img src="img/foto3.jpg" alt="Trabajo de Peluquería Estilo, foto 3" loading="lazy"></button></figure>
+          <figure class="foto"><button type="button" class="foto-boton" aria-label="Ver foto 4 en grande"><img src="img/foto4.jpg" alt="Trabajo de Peluquería Estilo, foto 4" loading="lazy"></button></figure>
+          <figure class="foto"><button type="button" class="foto-boton" aria-label="Ver foto 5 en grande"><img src="img/foto5.jpg" alt="Trabajo de Peluquería Estilo, foto 5" loading="lazy"></button></figure>
+          <figure class="foto"><button type="button" class="foto-boton" aria-label="Ver foto 6 en grande"><img src="img/foto6.jpg" alt="Trabajo de Peluquería Estilo, foto 6" loading="lazy"></button></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="nosotros">
+      <div class="contenedor dos-columnas">
+        <h2>Sobre nosotros</h2>
+        <div class="texto-largo">
+          <p>Somos una peluquería de barrio en Riobamba. Atendemos por turnos para que no esperes de más, y antes de empezar conversamos contigo: nos cuentas qué buscas o traes una foto, y lo hacemos.</p>
+          <p>Trabajamos con hombres, mujeres y niños, desde un corte clásico hasta un cambio de color.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion fondo-suave" id="preguntas">
+      <div class="contenedor dos-columnas">
+        <h2>Preguntas frecuentes</h2>
+        <div class="preguntas">
+          <details>
+            <summary>¿Necesito reservar turno?</summary>
+            <p>Te recomendamos reservar por WhatsApp para que no esperes. Si hay un espacio libre, también atendemos sin reserva.</p>
+          </details>
+          <details>
+            <summary>¿Atienden a niños?</summary>
+            <p>Sí. El corte infantil es para niños hasta 10 años.</p>
+          </details>
+          <details>
+            <summary>¿Puedo llevar una foto del corte que quiero?</summary>
+            <p>Claro. Nos muestras la foto y te decimos si se puede lograr con tu tipo de cabello.</p>
+          </details>
+          <details>
+            <summary>¿Cómo puedo pagar?</summary>
+            <p>En efectivo o por transferencia.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -85,11 +124,12 @@
             <div><dt>Lunes a sábado</dt><dd>9:00 a 19:00</dd></div>
             <div><dt>Domingo</dt><dd>Cerrado</dd></div>
           </dl>
-          <p class="nota">Encuéntranos en el mapa.</p>
+          <address class="direccion">Primera Constituyente 3501,<br>Riobamba, Ecuador</address>
+          <a class="boton boton-contorno" href="https://www.google.com/maps/search/?api=1&amp;query=Primera+Constituyente+3501+Riobamba+Ecuador" target="_blank" rel="noopener">Cómo llegar</a>
         </div>
 
         <div class="mapa">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3988.136499702346!2d-78.66944355042034!3d-1.6636660955347442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scortes%20de%20pelo!5e0!3m2!1ses-419!2sec!4v1793467092900!5m2!1ses-419!2sec" title="Mapa con la ubicación de Peluquería Estilo" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d954.3021316735075!2d-78.65576134770055!3d-1.6670182810449188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scortes%20de%20pelo!5e0!3m2!1ses-419!2sec!4v1793468770791!5m2!1ses-419!2sec" title="Mapa con la ubicación de Peluquería Estilo" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
       </div>
     </section>
@@ -101,6 +141,7 @@
         <h2>Reserva tu turno</h2>
         <p class="hero-texto">Escríbenos por WhatsApp con el servicio que quieres y el horario que te queda mejor.</p>
         <a class="boton" href="https://wa.me/593999999999?text=Hola%2C%20quiero%20reservar%20un%20turno" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        <p class="telefono">WhatsApp: 099 999 9999</p>
       </div>
     </section>
 
@@ -109,8 +150,14 @@
   <footer class="pie">
     <div class="contenedor">
       <p>© 2026 Peluquería Estilo</p>
+      <p>Primera Constituyente 3501, Riobamba, Ecuador</p>
     </div>
   </footer>
+
+  <!-- Ventana para ver las fotos en grande -->
+  <dialog class="visor" id="visor">
+    <img id="visor-imagen" src="" alt="">
+  </dialog>
 
   <script>
     // Muestra si el negocio está abierto según la hora de quien visita la página
@@ -126,6 +173,24 @@
       estado.textContent = "Cerrado ahora, abrimos de lunes a sábado desde las 9:00";
     }
     estado.classList.toggle("abierto", abierto);
+
+    // Ver las fotos en grande
+    const visor = document.getElementById("visor");
+    const visorImagen = document.getElementById("visor-imagen");
+
+    document.querySelectorAll(".foto-boton").forEach(function (boton) {
+      boton.addEventListener("click", function () {
+        const imagen = boton.querySelector("img");
+        visorImagen.src = imagen.src;
+        visorImagen.alt = imagen.alt;
+        visor.showModal();
+      });
+    });
+
+    // Al tocar la ventana (o presionar Esc) se cierra
+    visor.addEventListener("click", function () {
+      visor.close();
+    });
   </script>
 
 </body>
